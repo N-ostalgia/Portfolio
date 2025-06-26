@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Portfolio - WOW!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="particles"></div>
+  <div class="scanlines"></div>
+  <canvas id="gameCanvas"></canvas>
+  
+  <!-- Easter Egg Elements -->
+  <div class="easter-egg" id="konami">🎮 KONAMI CODE ACTIVATED! 🎮</div>
+  <div class="easter-egg" id="clickCounter">CLICKS: <span id="clickCount">0</span></div>
+  <div class="easter-egg" id="mouseTrail"></div>
+  
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#" id="secretBtn" class="nav-link">🤖</a></li>
+    </ul>
+  </nav>
+  
+  <header id="home" class="hero-section">
+    <div class="hero-content">
+      <h1 class="neon-title" id="mainTitle">Aya Bouibauan</h1>
+      <p class="neon-subtitle" id="typewriter">1 year CS engineering student</p>
+      <div class="hero-buttons">
+        <button class="retro-btn" id="colorBtn">🎨 Change Colors</button>
+        <button class="retro-btn" id="matrixBtn">🌊 Matrix Mode</button>
+        <button class="retro-btn" id="danceBtn">💃 Dance Mode</button>
+      </div>
+    </div>
+    <div class="floating-elements">
+      <div class="floating-icon">🎮</div>
+      <div class="floating-icon">💻</div>
+      <div class="floating-icon">🚀</div>
+      <div class="floating-icon">⚡</div>
+    </div>
+  </header>
+  
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>Hi there! I am a first-year Computer Science engineering student with a strong interest in technology and problem-solving. I enjoy working on innovative projects, learning new concepts, and improving my technical and analytical skills.<br><br>
+      I am particularly curious about digital security and system protection .I value teamwork and clear communication, and I'm always looking for opportunities to grow, collaborate, and apply my knowledge in meaningful ways.<br><br>
+      Open to connecting and exchanging ideas—feel free to reach out!</p>
+      <div class="skills-grid">
+        <div class="skill-item" data-skill="HTML">HTML</div>
+        <div class="skill-item" data-skill="CSS">CSS</div>
+        <div class="skill-item" data-skill="JavaScript">JavaScript</div>
+        <div class="skill-item" data-skill="php">php</div>
+        <div class="skill-item" data-skill="C">C</div>
+        <div class="skill-item" data-skill="C++">C++</div>
+        <div class="skill-item" data-skill="Python">Python</div>
+        <div class="skill-item" data-skill="SQL">SQL</div>
+        <div class="skill-item" data-skill="Git">Git</div>
+        <div class="skill-item" data-skill="Linux">Linux</div>
+        <div class="skill-item" data-skill="Windows">Windows</div>
+        <div class="skill-item" data-skill="QT">QT</div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card" data-project="1">
+        <h3>Project One</h3>
+        <p>Short description of your project.</p>
+        <div class="project-links">
+          <a href="#" class="project-link">🔗 Live Demo</a>
+          <a href="#" class="project-link">📁 Code</a>
+        </div>
+      </div>
+      <div class="project-card" data-project="2">
+        <h3>Project Two</h3>
+        <p>Short description of your project.</p>
+        <div class="project-links">
+          <a href="#" class="project-link">🔗 Live Demo</a>
+          <a href="#" class="project-link">📁 Code</a>
+        </div>
+      </div>
+      <div class="project-card" data-project="3">
+        <h3>Project Three</h3>
+        <p>Short description of your project.</p>
+        <div class="project-links">
+          <a href="#" class="project-link">🔗 Live Demo</a>
+          <a href="#" class="project-link">📁 Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <div class="social-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=bouibauanaya730@gmail.com" target="_blank" class="social-icon" data-platform="email" title="Email">
+        <svg viewBox="0 0 24 24">
+          <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v.01L12 13l8-8.99V4H4zm16 2.41l-7.29 7.3a1 1 0 0 1-1.42 0L4 6.41V20h16V6.41z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/N-ostalgia" target="_blank" class="social-icon" data-platform="github" title="GitHub">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/aya-bouibauan-a12a04201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon" data-platform="linkedin" title="LinkedIn">
+        <svg viewBox="0 0 24 24">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+      <a href="https://twitter.com/NostalgiAB08" target="_blank" class="social-icon" data-platform="twitter" title="X (Twitter)">
+        <svg viewBox="0 0 24 24">
+          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Hidden Easter Egg Section -->
+  <div id="secretSection" class="secret-section">
+    <button id="closeSecretBtn" style="position:absolute;top:12px;right:16px;font-size:2rem;background:none;border:none;color:#ff00cc;cursor:pointer;z-index:10;">&times;</button>
+    <h2>🎉 CONGRATULATIONS! 🎉</h2>
+    <p>You found the secret section! You're awesome!</p>
+    <div class="secret-content">
+      <p>This is a hidden area for those who explore...</p>
+      <div id="mascotContainer" style="display:flex;flex-direction:column;align-items:center;justify-content:center;margin:1.5rem 0 1rem 0;">
+        <div id="mascotSpeech" style="min-height:32px;margin-bottom:0.5rem;"></div>
+        <div id="pixelMascot">
+          <!-- Pixel emoji robot SVG with oval hand and expressive face only -->
+          <svg id="mascotSVG" width="80" height="80" viewBox="0 0 80 80" style="image-rendering:pixelated;">
+            <!-- Face (emoji style) -->
+            <circle id="mascotFace" cx="40" cy="40" r="20" fill="#39ff14" stroke="#111" stroke-width="3"/>
+            <!-- Eyes -->
+            <circle id="mascotEyeL" cx="32" cy="38" r="3" fill="#111"/>
+            <circle id="mascotEyeR" cx="48" cy="38" r="3" fill="#111"/>
+            <!-- Mouth (neutral, can be changed by JS) -->
+            <ellipse id="mascotMouth" cx="40" cy="48" rx="6" ry="3" fill="#111"/>
+            <!-- Oval right hand (initially hidden) -->
+            <g id="mascotHandGroup" style="opacity:0;">
+              <ellipse id="mascotHand" cx="68" cy="32" rx="6" ry="10" fill="#ff00cc" stroke="#111" stroke-width="2"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <canvas id="snakeGame" width="320" height="320" style="display:block;margin:2rem auto 1rem;max-width:100%;background:#111;box-shadow:0 0 20px #39ff14;"></canvas>
+      <div id="snakeControls" style="display:flex;justify-content:center;gap:1rem;margin-bottom:1rem;"></div>
+      <div id="hallOfFame"></div>
+      <button id="resetBtn" class="retro-btn">Reset Everything</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html> 
