@@ -1,8 +1,8 @@
 # Portfolio
 
-Welcome to my Retro Portfolio! 🚀
+Welcome to my Portfolio! 🚀
 
-This is the personal portfolio of **Aya Bouibauan**, a first-year Computer Science engineering student passionate about technology, digital security, and creative coding. This site is designed with a playful 80s neon retro theme, featuring interactive elements and a mesmerizing user experience.
+This is my personal portfolio ,I am a first-year Computer Science engineering student passionate about technology, digital security, and creative coding. This site is designed with a playful 80s neon retro theme, featuring interactive elements and a mesmerizing user experience.
 
 ## 🌟 Features
 - Animated neon grid background, scanlines, and particles
@@ -21,7 +21,7 @@ This is the personal portfolio of **Aya Bouibauan**, a first-year Computer Scien
 
 ## 📂 How to View
 1. **Online:**
-   - Visit the [GitHub Pages link](https://N-ostalgia.github.io/Portfolio) (if enabled)
+   - Visit the [GitHub Pages link](https://N-ostalgia.github.io/Portfolio) 
    - Or clone/download and open `index.html` in your browser
 2. **Locally:**
    - Clone the repo:
@@ -30,10 +30,6 @@ This is the personal portfolio of **Aya Bouibauan**, a first-year Computer Scien
      ```
    - Open `index.html` in your browser
 
-## 👩‍💻 About Me
-Hi there! I am a first-year Computer Science engineering student with a strong interest in technology and problem-solving. I enjoy working on innovative projects, learning new concepts, and improving my technical and analytical skills. I am particularly curious about digital security and system protection. I value teamwork and clear communication, and I'm always looking for opportunities to grow, collaborate, and apply my knowledge in meaningful ways.
-
-Open to connecting and exchanging ideas—feel free to reach out!
 
 ## 📫 Contact
 - **Email:** [bouibauanaya730@gmail.com](mailto:bouibauanaya730@gmail.com)
