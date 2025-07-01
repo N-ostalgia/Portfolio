@@ -21,22 +21,26 @@
   
   <nav class="navbar">
     <ul>
+            <li><a href="#" id="secretBtn" class="nav-link">🤖</a></li>
       <li><a href="#home" class="nav-link">Home</a></li>
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
-      <li><a href="#" id="secretBtn" class="nav-link">🤖</a></li>
+     
     </ul>
   </nav>
   
   <header id="home" class="hero-section">
     <div class="hero-content">
       <h1 class="neon-title" id="mainTitle">Aya Bouibauan</h1>
-      <p class="neon-subtitle" id="typewriter">1 year CS engineering student</p>
+      <p class="neon-subtitle" id="typewriter">CS engineering student</p>
       <div class="hero-buttons">
         <button class="retro-btn" id="colorBtn">🎨 Change Colors</button>
         <button class="retro-btn" id="matrixBtn">🌊 Matrix Mode</button>
         <button class="retro-btn" id="danceBtn">💃 Dance Mode</button>
+        <button class="retro-btn" onclick="window.open('professional.html', '_self')">👔 Professional Mode</button>
       </div>
     </div>
     <div class="floating-elements">
@@ -53,20 +57,8 @@
       <p>Hi there! I am a first-year Computer Science engineering student with a strong interest in technology and problem-solving. I enjoy working on innovative projects, learning new concepts, and improving my technical and analytical skills.<br><br>
       I am particularly curious about digital security and system protection .I value teamwork and clear communication, and I'm always looking for opportunities to grow, collaborate, and apply my knowledge in meaningful ways.<br><br>
       Open to connecting and exchanging ideas—feel free to reach out!</p>
-      <div class="skills-grid">
-        <div class="skill-item" data-skill="HTML">HTML</div>
-        <div class="skill-item" data-skill="CSS">CSS</div>
-        <div class="skill-item" data-skill="JavaScript">JavaScript</div>
-        <div class="skill-item" data-skill="php">php</div>
-        <div class="skill-item" data-skill="C">C</div>
-        <div class="skill-item" data-skill="C++">C++</div>
-        <div class="skill-item" data-skill="Python">Python</div>
-        <div class="skill-item" data-skill="SQL">SQL</div>
-        <div class="skill-item" data-skill="Git">Git</div>
-        <div class="skill-item" data-skill="Linux">Linux</div>
-        <div class="skill-item" data-skill="Windows">Windows</div>
-        <div class="skill-item" data-skill="QT">QT</div>
-      </div>
+      <a href="assets/Aya_BOUIBAUAN_CV.pdf" download="Aya_BOUIBAUAN_CV.pdf" class="retro-btn" style="margin-top:1.5em;display:inline-block;">📄 Download Resume</a>
+    
     </div>
   </section>
   
@@ -74,55 +66,155 @@
     <h2>Projects</h2>
     <div class="project-list">
       <div class="project-card" data-project="1">
-        <h3>C Banking System</h3>
-        <p>A command-line banking management system in C with SQLite database. Features account management, transactions, and statistical reporting through a modern console interface.</p>
-        <div class="project-links">
-          <a href="https://github.com/N-ostalgia/C_Banking_System" target="_blank" class="project-link">📁 GitHub</a>
-          <a href="https://github.com/N-ostalgia/C_Banking_System/blob/main/README.md" target="_blank" class="project-link">📖 README</a>
+        <div class="project-image">🔒</div>
+        <div class="project-content">
+          <h3>C Banking System</h3>
+          <div class="project-tech">
+            <span class="tech-tag">C</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">CLI</span>
+            <span class="tech-tag">Windows</span>
+          </div>
+          <div class="project-description">
+            A command-line banking management system in C with SQLite database. Features account management, transactions, and statistical reporting through a modern console interface.
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/N-ostalgia/C_Banking_System" target="_blank" class="project-link">📁 GitHub</a>
+            <a href="https://github.com/N-ostalgia/C_Banking_System/blob/main/README.md" target="_blank" class="project-link">📖 README</a>
+          </div>
         </div>
-      </div>
+      </div>  
       <div class="project-card" data-project="2">
-        <h3>Project Two</h3>
-        <p>Short description of your project.</p>
-        <div class="project-links">
-          <a href="#" class="project-link">🔗 Live Demo</a>
-          <a href="#" class="project-link">📁 Code</a>
-        </div>
-      </div>
-      <div class="project-card" data-project="3">
-        <h3>Project Three</h3>
-        <p>Short description of your project.</p>
-        <div class="project-links">
-          <a href="#" class="project-link">🔗 Live Demo</a>
-          <a href="#" class="project-link">📁 Code</a>
+        <div class="project-image">📚</div>
+        <div class="project-content">
+          <h3>Application de Gestion des Affectations des Enseignements</h3>
+          <div class="project-tech">
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-description">
+            A web application to optimize and automate the assignment of teaching units to faculty, featuring multi-role authentication, workload balancing, and reporting. Built for academic use.
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/N-ostalgia/-Application-de-Gestion-des-Affectations-des-Enseignements-php" target="_blank" class="project-link">📁 GitHub</a>
+            <a href="https://github.com/N-ostalgia/-Application-de-Gestion-des-Affectations-des-Enseignements-php/blob/main/README.md" target="_blank" class="project-link">📖 README</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
   
+  <section id="skills" class="skills-section">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="skill-item" data-skill="C">C</div>
+        <div class="skill-item" data-skill="C++">C++</div>
+        <div class="skill-item" data-skill="Python">Python</div>
+        <div class="skill-item" data-skill="SQL">SQL</div>
+      </div>
+      <div class="skill-category">
+        <h3>Web Development</h3>
+        <div class="skill-item" data-skill="HTML">HTML5</div>
+        <div class="skill-item" data-skill="CSS">CSS3</div>
+        <div class="skill-item" data-skill="JavaScript">JavaScript</div>
+        <div class="skill-item" data-skill="php">php</div>
+  
+      </div>
+      <div class="skill-category">
+        <h3>Tools & Platforms</h3>
+        <div class="skill-item" data-skill="Git">Git</div>
+        <div class="skill-item" data-skill="Linux">Linux</div>
+        <div class="skill-item" data-skill="Windows">Windows</div>
+        <div class="skill-item" data-skill="QT">QT</div>
+        <div class="skill-item" data-skill="VirtualBox">VirtualBox</div>
+        <div class="skill-item" data-skill="Wireshark">Wireshark</div>
+        <div class="skill-item" data-skill="Nmap">Nmap</div>
+
+      </div>
+    </div>
+  </section>
+  
+  <section id="certifications" class="certifications-section">
+    <h2>Certifications & Achievements</h2>
+    <div class="certifications-grid">
+      <!-- Coursera Certifications Start -->
+      <div class="cert-card">
+        <a href="https://www.coursera.org/account/accomplishments/specialization/F98P7VO2RBNO?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Ds12n" target="_blank">
+          <img src="assets/Certified in Cybersecurity by ISC2.png" alt="Certified in Cybersecurity Certificate" class="cert-img" style="width:100%;max-width:220px;display:block;margin:0 auto 1em auto;border-radius:8px;box-shadow:0 0 8px #39ff14;">
+        </a>
+        <h3 class="cert-title">Certified in Cybersecurity</h3>
+        <p class="cert-issuer">ISC2 (Coursera)</p>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/F98P7VO2RBNO?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Ds12n" class="cert-link" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <a href="https://www.coursera.org/account/accomplishments/specialization/YUA8MZCDF0EO?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Ds12n" target="_blank">
+          <img src="assets/Introduction to Cyber Security by NYU.png" alt="Introduction to Cyber Security Certificate" class="cert-img" style="width:100%;max-width:220px;display:block;margin:0 auto 1em auto;border-radius:8px;box-shadow:0 0 8px #39ff14;">
+        </a>
+        <h3 class="cert-title">Introduction to Cyber Security</h3>
+        <p class="cert-issuer">NYU (Coursera)</p>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/YUA8MZCDF0EO?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Ds12n" class="cert-link" target="_blank">View Certificate</a>
+      </div>
+      <!-- Coursera Certifications End -->
+    </div>
+  </section>
+  
   <section id="contact" class="contact-section">
     <h2>Contact</h2>
-    <div class="social-icons">
-      <a href="https://mail.google.com/mail/?view=cm&to=bouibauanaya730@gmail.com" target="_blank" class="social-icon" data-platform="email" title="Email">
-        <svg viewBox="0 0 24 24">
-          <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v.01L12 13l8-8.99V4H4zm16 2.41l-7.29 7.3a1 1 0 0 1-1.42 0L4 6.41V20h16V6.41z"/>
-        </svg>
-      </a>
-      <a href="https://github.com/N-ostalgia" target="_blank" class="social-icon" data-platform="github" title="GitHub">
-        <svg viewBox="0 0 24 24">
-          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-        </svg>
-      </a>
-      <a href="https://www.linkedin.com/in/aya-bouibauan-a12a04201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon" data-platform="linkedin" title="LinkedIn">
-        <svg viewBox="0 0 24 24">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-        </svg>
-      </a>
-      <a href="https://twitter.com/NostalgiAB08" target="_blank" class="social-icon" data-platform="twitter" title="X (Twitter)">
-        <svg viewBox="0 0 24 24">
-          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-        </svg>
-      </a>
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Let's Connect</h3>
+        <p>Whether you're interested in hiring, collaborating, or just want to connect, reach out below!</p>
+        <div class="contact-links-vertical">
+          <a href="mailto:bouibauanaya730@gmail.com" class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v.01L12 13l8-8.99V4H4zm16 2.41l-7.29 7.3a1 1 0 0 1-1.42 0L4 6.41V20h16V6.41z" fill="#39ff14"/></svg>
+            bouibauanaya730@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/aya-bouibauan-a12a04201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-link" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z" fill="#39ff14"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/N-ostalgia" class="contact-link" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" fill="#39ff14"/></svg>
+            GitHub: @N-ostalgia
+          </a>
+          <a href="https://twitter.com/NostalgiAB08" class="contact-link" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" fill="#39ff14"/></svg>
+            Twitter: @NostalgiAB08
+          </a>
+          <div class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#39ff14"/></svg>
+            Driouch, Morocco
+          </div>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Tell me about your project or opportunity..."></textarea>
+        </div>
+        <button type="submit" class="retro-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M2 21l21-9-21-9v7l15 2-15 2z"/></svg>
+          Send Message
+        </button>
+      </form>
     </div>
   </section>
   

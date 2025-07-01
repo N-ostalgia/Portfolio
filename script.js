@@ -1165,4 +1165,25 @@ InteractiveButtons.prototype.showSecretSection = function() {
       mascotSetFace('happy');
     }, 800);
   }, 120);
-}; 
+};
+
+// --- PROJECT DESCRIPTION TOGGLE ---
+function toggleDescription(button) {
+  const projectCard = button.closest('.project-card');
+  const preview = projectCard.querySelector('.project-preview');
+  const fullDescription = projectCard.querySelector('.project-full-description');
+  
+  if (fullDescription.style.display === 'none') {
+    // Show full description
+    preview.style.display = 'none';
+    fullDescription.style.display = 'block';
+    button.textContent = '📖 Show Less';
+    button.classList.add('active');
+  } else {
+    // Hide full description
+    preview.style.display = 'block';
+    fullDescription.style.display = 'none';
+    button.textContent = '📖 Read More';
+    button.classList.remove('active');
+  }
+} 

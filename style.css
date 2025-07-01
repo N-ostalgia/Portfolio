@@ -252,6 +252,7 @@ body::before {
   box-shadow: 0 0 10px var(--neon-color, #39ff14);
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .retro-btn::before {
@@ -388,55 +389,80 @@ section h2 {
 .project-card {
   background: rgba(20, 16, 38, 0.95);
   border: 2px solid var(--neon-color, #ff00cc);
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0 0 10px var(--neon-color, #ff00cc);
-  padding: 1.5rem;
-  width: 220px;
+  padding: 0;
+  width: 320px;
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(57, 255, 20, 0.2), transparent);
-  transition: left 0.5s;
+.project-card .project-image {
+  background: linear-gradient(135deg, #2d1a4d 0%, #39ff14 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  font-size: 3rem;
+  color: #fff;
+  border-bottom: 2px solid var(--neon-color, #ff00cc);
 }
-.project-card:hover::before {
-  left: 100%;
-}
-.project-card:hover {
-  transform: scale(1.05) rotate(-2deg);
-  box-shadow: 0 0 20px #39ff14, 0 0 40px #ff00cc;
+.project-card .project-content {
+  padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .project-card h3 {
   color: var(--neon-color, #39ff14);
   text-shadow: 0 0 5px var(--neon-color, #39ff14);
-  margin-bottom: 1rem;
+  margin-bottom: 0.7em;
+  font-size: 1.2em;
 }
-
-.project-links {
-  margin-top: 1rem;
+.project-tech {
   display: flex;
-  gap: 0.5rem;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1em;
 }
-
+.tech-tag {
+  background: #141026;
+  color: #39ff14;
+  border: 1.5px solid #39ff14;
+  border-radius: 1em;
+  font-size: 0.8em;
+  font-family: 'Press Start 2P', monospace;
+  padding: 0.2em 0.9em;
+  margin-bottom: 0.2em;
+  text-shadow: 0 0 4px #39ff14;
+  letter-spacing: 1px;
+}
+.project-description {
+  color: #fff;
+  font-size: 0.95em;
+  margin-bottom: 1em;
+  line-height: 1.6;
+  font-family: 'Press Start 2P', monospace;
+}
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 0.7em;
+  justify-content: flex-start;
+}
 .project-link {
   color: #ff00cc;
   text-decoration: none;
-  font-size: 0.6rem;
-  padding: 0.3rem 0.6rem;
+  font-size: 0.9em;
+  padding: 0.3em 0.8em;
   border: 1px solid #ff00cc;
   border-radius: 4px;
   transition: all 0.2s;
+  font-family: 'Press Start 2P', monospace;
 }
-
 .project-link:hover {
   background: #ff00cc;
   color: #141026;
@@ -712,4 +738,233 @@ body.dance-mode .floating-icon {
 
 .about-section p {
   line-height: 1.7;
+}
+
+/* Read More Button Styling */
+.read-more-btn {
+  background: transparent;
+  border: 2px solid var(--neon-color, #39ff14);
+  color: var(--neon-color, #39ff14);
+  padding: 8px 16px;
+  margin: 10px 0;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px var(--neon-color, #39ff14);
+  box-shadow: 0 0 10px var(--neon-color, #39ff14);
+  border-radius: 4px;
+}
+
+.read-more-btn:hover {
+  background: var(--neon-color, #39ff14);
+  color: #000;
+  text-shadow: none;
+  box-shadow: 0 0 20px var(--neon-color, #39ff14);
+  transform: scale(1.05);
+}
+
+.read-more-btn.active {
+  background: var(--neon-color, #39ff14);
+  color: #000;
+  text-shadow: none;
+}
+
+.project-preview {
+  margin-bottom: 10px;
+}
+
+.project-full-description {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.contact-links-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  margin-bottom: 2em;
+}
+.contact-link {
+  color: #39ff14;
+  font-family: 'Press Start 2P', monospace;
+  text-decoration: none;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.contact-link:hover {
+  color: #ff00cc;
+  text-shadow: 0 0 8px #ff00cc;
+}
+.contact-icon {
+  margin-right: 0.7em;
+  font-size: 1.1em;
+}
+.contact-content {
+  display: block;
+  text-align: left;
+  margin-left: 2vw;
+}
+
+.contact-form {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 1.2em;
+}
+
+.contact-form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff00cc;
+  box-shadow: 0 0 8px #ff00cc;
+}
+.contact-info {
+  margin-bottom: 2.5em;
+}
+.contact-form input,
+.contact-form textarea {
+  background: #141026;
+  border: 2px solid #39ff14;
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.contact-link svg {
+  margin-right: 0.7em;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  fill: #39ff14;
+}
+
+.contact-info p {
+  margin-bottom: 2em;
+}
+
+.certifications-section {
+  margin: 3rem auto;
+  max-width: 800px;
+  background: rgba(20, 16, 38, 0.85);
+  border: 2px solid var(--neon-color, #ff00cc);
+  border-radius: 12px;
+  box-shadow: 0 0 20px var(--neon-color, #ff00cc), 0 0 40px #39ff14 inset;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+}
+.certifications-section h2 {
+  color: #39ff14;
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #ff00cc;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.certifications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.cert-card {
+  background: rgba(20, 16, 38, 0.95);
+  border: 2px solid var(--neon-color, #39ff14);
+  border-radius: 12px;
+  box-shadow: 0 0 10px var(--neon-color, #39ff14);
+  padding: 1.5rem 1.2rem;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cert-card:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 0 20px #ff00cc, 0 0 40px #39ff14;
+  border-color: #ff00cc;
+}
+.cert-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff00cc;
+  text-shadow: 0 0 10px #ff00cc;
+}
+.cert-title {
+  color: #39ff14;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Press Start 2P', monospace;
+}
+.cert-issuer {
+  color: #fff;
+  font-size: 0.95em;
+  margin-bottom: 0.2em;
+  font-family: 'Press Start 2P', monospace;
+}
+.cert-link {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #ff00cc;
+  font-weight: bold;
+  font-family: 'Press Start 2P', monospace;
+  border: 1.5px solid #ff00cc;
+  border-radius: 1em;
+  padding: 0.3em 1em;
+  background: transparent;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 8px #ff00cc;
+}
+.cert-link:hover {
+  background: #ff00cc;
+  color: #141026;
+  box-shadow: 0 0 16px #ff00cc;
+}
+.cert-img {
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  margin: 0 auto 1em auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #39ff14, 0 0 16px #ff00cc33;
+  border: 2px solid #39ff14;
+  background: #141026;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.cert-img:hover {
+  box-shadow: 0 0 16px #ff00cc, 0 0 32px #39ff14;
+  transform: scale(1.03) rotate(-1deg);
 } 
